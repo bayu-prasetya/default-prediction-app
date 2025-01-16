@@ -13,7 +13,7 @@ with person_info:
     st.header("Personal Information")
     name = st.text_input("Name", placeholder="Enter your name", label_visibility="hidden")
     age = st.number_input("Age", min_value=18, max_value=100, value=18, step=1, placeholder="Enter your age", label_visibility="hidden")
-    gender = st.selectbox("Gender", options=("Male", "Female"), index="Male", placeholder="Gender", label_visibility="hidden")
+    gender = st.selectbox("Gender", options=("Male", "Female"), index=1, placeholder="Gender", label_visibility="hidden")
     mstat = st.selectbox("Marital Status", options=("Married", "Single", "Other"), index=1, placeholder="Marital Status", label_visibility="hidden")
     edu = st.selectbox("Education", options=("Graduate School","University","high school","others"), index=1, placeholder="Education", label_visibility="hidden")
     limit_bal = st.number_input("Credit Limit", min_value=0, max_value=1000000, value=10000, step=100, placeholder="Credit Limit", label_visibility="hidden")
