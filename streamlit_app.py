@@ -23,12 +23,12 @@ with cred_hist:
     st.header("Credit History")
     stat, bill, pay = st.columns(3)
     # Payment Status
-    PAY_1 = stat.number_input("Repayment Status (Current Month)", min_value=-2, max_value=8, value=100, placeholder="Repayment delay")
-    PAY_2 = stat.number_input("Repayment Status (1 month ago)", min_value=-2, max_value=8, value=100, placeholder="Repayment delay")
-    PAY_3 = stat.number_input("Repayment Status (2 month ago)", min_value=-2, max_value=8, value=100, placeholder="Repayment delay")
-    PAY_4 = stat.number_input("Repayment Status (3 month ago)", min_value=-2, max_value=8, value=100, placeholder="Repayment delay")
-    PAY_5 = stat.number_input("Repayment Status (4 month ago)", min_value=-2, max_value=8, value=100, placeholder="Repayment delay")
-    PAY_6 = stat.number_input("Repayment Status (5 month ago)", min_value=-2, max_value=8, value=100, placeholder="Repayment delay")
+    PAY_1 = stat.number_input("Repayment Status (Current Month)", min_value=-2, max_value=8, value=0, placeholder="Repayment delay")
+    PAY_2 = stat.number_input("Repayment Status (1 month ago)", min_value=-2, max_value=8, value=0, placeholder="Repayment delay")
+    PAY_3 = stat.number_input("Repayment Status (2 month ago)", min_value=-2, max_value=8, value=0, placeholder="Repayment delay")
+    PAY_4 = stat.number_input("Repayment Status (3 month ago)", min_value=-2, max_value=8, value=0, placeholder="Repayment delay")
+    PAY_5 = stat.number_input("Repayment Status (4 month ago)", min_value=-2, max_value=8, value=0, placeholder="Repayment delay")
+    PAY_6 = stat.number_input("Repayment Status (5 month ago)", min_value=-2, max_value=8, value=0, placeholder="Repayment delay")
     # Bill Amount
     BILL_AMT1 = bill.number_input("Bill Amount (Current Month)", min_value=0, max_value=1000000, value=100, step=100, placeholder="Bill Amount")
     BILL_AMT2 = bill.number_input("Bill Amount (1 month ago)", min_value=0, max_value=1000000, value=100, step=100, placeholder="Bill Amount")
